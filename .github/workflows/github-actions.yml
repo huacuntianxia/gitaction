@@ -6,6 +6,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       # generates coverage-report.md and publishes as checkrun
       - name: JaCoCo Code Coverage Report
