@@ -31,7 +31,7 @@ jobs:
           path: jacoco.xml
       - name: Add coverage to PR
         id: jacoco
-        uses: madrapps/jacoco-report@v1.2
+        uses: madrapps/jacoco-report@v1.3
         with:
           paths: jacoco.xml
           token: ${{ secrets.GITHUB_TOKEN }}
