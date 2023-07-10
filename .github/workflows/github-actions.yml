@@ -29,9 +29,6 @@ jobs:
         with:
           name: CodeCoverage Results
           path: jacoco.xml
-
-
-
       - name: Add coverage to PR
         id: jacoco
         uses: madrapps/jacoco-report@v1.2
