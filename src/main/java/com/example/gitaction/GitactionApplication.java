@@ -15,4 +15,11 @@ public class GitactionApplication {
 		SpringApplication.run(GitactionApplication.class, args);
 	}
 
+	public int calulate(int a, int b)
+	{
+		int c = a *b;
+		c +=1;
+		return c;
+	}
+
 }
