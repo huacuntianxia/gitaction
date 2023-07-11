@@ -23,6 +23,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: mvn build
+        run: |
+          mvn compile
       - name: echo secrets
         run: |
           echo "abc"${{ secrets.GITHUB_TOKEN }}
